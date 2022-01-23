@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iPhone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./amenu/amenu.css">
+
+    <script src="./amenu/amenu.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="container header__wrap">
+        <nav class="header__menu header-menu">
+            <img class="header-menu__logo" src="img/apple_logo_black.svg" alt="">
+            <ul class="header-menu__list">
+                <li class="header-menu__item"><a href="#present">О товаре</a></li>
+                <li class="header-menu__item"><a href="#card">Карточка товара</a></li>
+                <li class="header-menu__item"><a href="#characteristics">Характеристики</a></li>
+                <li class="header-menu__item"><a href="#cross-sell">Дополняют товар</a></li>
+                <li class="header-menu__item"><a href="#">Отзывы</a></li>
+                <li class="header-menu__item"><a href="#">Условия доставки</a></li>
+            </ul>
+            <div class="header-menu__burger"></div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="present" id="present">
+        <div class="container">
+            <h1 class="present__title">iPhone12</h1>
+            <p class="present__description">A14 Bionic, самый быстрый процессор iPhone. Дисплей OLED от края до края.
+                Передняя панель Ceramic Shield, которая в четыре раза снижает риск повреждений дисплея при падении. И
+                Ночной режим на всех камерах. Всё это есть в iPhone 12</p>
+            <figure class="present__img">
+                <img src="img/iPhone-main.png" alt="iPhone12">
+            </figure>
+        </div>
+    </section>
+    <section class="card" id="card">
+        <div class="container card__wrap">
+            <figure class="card__image">
+                <img class="card__image_item" src="img/iPhone-graphite.png" alt="iPhone12">
+            </figure>
+            <div class="card-details">
+                <h2 class="card-details__title">Смартфон Apple iPhone 12 Pro 128GB Graphite</h2>
+                <ul class="card-detail__buttons">
+                    <li class="card-details__wrap-btn">
+                        <button class="card-detail__change active" type="button">Графитовый</button>
+                    </li>
+                    <li class="card-details__wrap-btn">
+                        <button class="card-detail__change" type="button">Серебристый</button>
+                    </li>
+                    <li class="card-details__wrap-btn">
+                        <button class="card-detail__change" type="button">Тихоокеанский синий</button>
+                    </li>
+                </ul>
+                <div class="card-details__description">
+                    <ul class="card-details__description-list description">
+                        <li class="card-details__description-item description__screen">Экран 6.1"/2532x1170 Пикс</li>
+                        <li class="card-details__description-item description__tech-screen">Технология экрана OLED</li>
+                        <li class="card-details__description-item description__processor">Тип процессора A14 Bionic</li>
+                        <li class="card-details__description-item description__memory">Встроенная память (ROM) 128 ГБ
+                        </li>
+                        <li class="card-details__description-item description__camera">Основная камера МПикс
+                            12/12/12/LiDAR
+                        </li>
+                    </ul>
+                    <a class="card-details__link-characteristics" href="#characteristics">Полные харакстеристики</a>
+                    <div class="card-details__footer">
+                        <p class="card-details__price">
+                            99990₽
+                        </p>
+                        <button class="button button_buy card-details__button_buy" data-button-buy="Оплата">Купить</button>
+                        <button class="button card-details__button_delivery" data-button-buy="Доставка и оплата">Купить с доставкой</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="characteristics" id="characteristics">
+        <div class="container">
+            <h2 class="characteristics__main-title main-title">Характеристики</h2>
+            <ul class="characteristics__list">
+                <li class="characteristics__item">
+                    <button class="characteristics__title active" type="button">Дисплей</button>
+                    <div class="characteristics__description active">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Тип дисплея</p>
+                                <p>Super Retina XDR (OLED)</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Диагональ (дюйм)</p>
+                                <p>6.1</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Разрешение (пикс)</p>
+                                <p>2532x1170</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Плотность пикселей (PPI)</p>
+                                <p>460</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Количество цветов дисплея</p>
+                                <p>16 млн.</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Сенсорный дисплей </p>
+                                <p>да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Тип сенсорного дисплея</p>
+                                <p>емкостный</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Поддержка Multitouch</p>
+                                <p>да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Защита экрана</p>
+                                <p>Ceramic Shield</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Особенности дисплея</p>
+                                <p>дисплей с расширенным цветовым охватом (P3), дисплей True Tone</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Олеофобное покрытие</p>
+                                <p>да</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Фотокамера</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Фотокамера (Мп)</p>
+                                <p>12 + 12 + 12 + сканер LiDAR</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Оптический зум</p>
+                                <p>x4</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Стабилизация изображения</p>
+                                <p>оптическая</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Автофокус</p>
+                                <p>гибридный</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Вспышка</p>
+                                <p>True Tone</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Видеозапись</p>
+                                <p>да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Разрешение видеосъемки (пикс)</p>
+                                <p>3840 x 2160</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Частота кадров видеосъемки</p>
+                                <p>60</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Стабилизация видео</p>
+                                <p>Да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Фронтальная камера (Мп)</p>
+                                <p>12</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Связь</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Диапазоны GSM</p>
+                                <p>850, 900, 1800, 1900</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Диапазоны UMTS</p>
+                                <p>850, 1700, 1900, 2100, 900</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Интернет</p>
+                                <p>GPRS, EDGE, 3G, 4G, 5G</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Bluetooth</p>
+                                <p>5.0</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Wi-Fi (802.11)</p>
+                                <p>b, g, n, ac, 2.4 ГГц, 5 ГГц</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>NFC</p>
+                                <p>да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Разъем для синхронизации</p>
+                                <p>Apple Lightning</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Apple Pay</p>
+                                <p>да</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Процессор</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Процессор</p>
+                                <p>Apple A14 Bionic</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>64-битная архитектура</p>
+                                <p>да</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Память</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Встроенная память (Гб)</p>
+                                <p>128</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Поддержка карт памяти</p>
+                                <p>нет</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Мультимедиа</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Аудиоплеер</p>
+                                <p>да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Видеоплеер</p>
+                                <p>да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Аудиоразъем</p>
+                                <p>Apple Lightning</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Стереодинамики</p>
+                                <p>Да</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Система</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Операционная система</p>
+                                <p>iOS 14</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Навигация</p>
+                                <p>GPS, ГЛОНАСС, A-GPS, GALILEO, функция точного определения местоположения iBeacon,
+                                    QZSS</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">SIM-карта</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>SIM-карта</p>
+                                <p>nano-SIM</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Кол-во SIM-карт</p>
+                                <p>1</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Питание</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Тип аккумулятора</p>
+                                <p>Литий-ионный, несъемный</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Разъем для зарядки</p>
+                                <p>Проприетарный Apple Lightning</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Беспроводная зарядка</p>
+                                <p>Да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Поддержка технологии быстрой зарядки</p>
+                                <p>да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Воспроизведение музыки (ч)</p>
+                                <p>65</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Воспроизведение видео (ч)</p>
+                                <p>17</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="characteristics__item">
+                    <button class="characteristics__title" type="button">Корпус</button>
+                    <div class="characteristics__description">
+                        <ul class="characteristics__list-description">
+                            <li class="characteristics__item-description">
+                                <p>Тип корпуса</p>
+                                <p>классический</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Высота (мм)</p>
+                                <p>146.7</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Ширина (мм)</p>
+                                <p>71.5</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Толщина (мм)</p>
+                                <p>7.4</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Вес (г)</p>
+                                <p>187</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Материал корпуса</p>
+                                <p>нерж. сталь, стекло</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Защита от влаги и пыли</p>
+                                <p>Да</p>
+                            </li>
+                            <li class="characteristics__item-description">
+                                <p>Стандарт защиты</p>
+                                <p>IP68</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="cross-sell" id="cross-sell">
+        <div class="container">
+            <h2 class="cross-sell__main-title main-title">Дополняют этот товар</h2>
+            <ul class="cross-sell__list">
+            </ul>
+            <button class="button cross-sell__add">Показать еще</button>
+        </div>
+    </section>
+</main>
+
+<div class="modal">
+    <div class="modal__block">
+        <button class="modal__close">✘</button>
+        <h2 class="modal__subtitle">Доставка и оплата</h2>
+        <form action="">
+            <input type="text" class=" visually-hidden" name="name-good" value="Смартфон Apple iPhone 12 Pro 128GB Graphite" disabled>
+            <h3 class="modal__title">Смартфон Apple iPhone 12 Pro 128GB Graphite</h3>
+            <label class="modal__label">
+                <span class="modal__label-text">Куда доставить</span>
+                <input class="modal__input" type="text">
+            </label>
+            <label class="modal__label">
+                <span class="modal__label-text">Кому</span>
+                <input class="modal__input" type="text">
+            </label>
+            <label class="modal__label">
+                <span class="modal__label-text">Телефон</span>
+                <input class="modal__input" type="text">
+            </label>
+            <button type="submit" class="button button_buy modal__submit">Заказать доставку</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

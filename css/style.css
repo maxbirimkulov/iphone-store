@@ -1,0 +1,595 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 300;
+    src: url("../fonts/SFProDisplay-Thin.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Thin.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 600;
+    src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 700;
+    src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/SFProDisplay-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    background-color: #fff; /* под проект */
+    font-family: "San Francisco", Arial, sans-serif; /* в "" свой шрифт под проект*/
+
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    line-height: 1;
+}
+
+button, input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.button_buy {
+    background-color: #FE3B3B;
+    border: 1px solid #FE3B3B;
+    color: #FFFFFF;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/* при работе с float */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*header*/
+
+.header__wrap {
+    max-width: 1130px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu__logo {
+    max-width: 34px;
+    margin-right: auto;
+}
+
+.header-menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu__item {
+    margin-right: 30px;
+    white-space: nowrap;
+}
+
+.header-menu__burger {
+    margin-left: auto;
+}
+
+@media (max-width: 375px) {
+    .logo {
+        margin-right: 10px;
+    }
+}
+
+
+/* present */
+
+.present {
+    text-align: center;
+    padding-bottom: 90px;
+    padding-top: 30px;
+}
+
+.present__title {
+    font-size: 72px;
+    margin-bottom: 40px;
+}
+
+.present__description {
+    font-size: 36px;
+    line-height: 43px;
+    max-width: 865px;
+    margin: 0 auto 100px;
+}
+
+.present__img {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+@media (max-width: 968px) {
+
+    .present {
+        padding-bottom: 50px;
+    }
+
+    .present__title {
+        font-size: 54px;
+        margin-bottom: 30px;
+    }
+
+    .present__description {
+        font-size: 28px;
+        line-height: 32px;
+        max-width: 670px;
+    }
+
+    .present__img {
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 698px) {
+    .present__title {
+        font-size: 48px;
+    }
+
+    .present__description {
+        font-size: 24px;
+        line-height: 28px;
+        max-width: 570px;
+        margin-bottom: 20px;
+    }
+
+    .present__img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 520px) {
+    .present__title {
+        font-size: 38px;
+    }
+
+    .present__description {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 304px;
+    }
+
+    .present__img {
+        max-width: 280px;
+    }
+}
+
+
+.card {
+    padding-top: 90px;
+}
+
+.card__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.card__image {
+    max-width: 300px;
+    margin: 0 70px 0 0;
+}
+
+
+.card-details__title {
+    font-size: 36px;
+    line-height: 43px;
+}
+
+
+
+.card-details__wrap-btn:not(:last-child) {
+    margin-right: 24px;
+}
+
+.card-detail__buttons {
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+.card-detail__change {
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 11px 16px;
+}
+
+.card-detail__change.active {
+    color: #FE3B3B;
+    border-bottom: 1px solid #FE3B3B;
+}
+
+.card-details__description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.card-details__description-list {
+    margin-bottom: 18px;
+}
+
+.card-details__footer {
+    display: flex;
+    align-items: center;
+}
+
+.card-details__price {
+    min-width: 120px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 60px;
+}
+
+.card-details__link-characteristics {
+    display: block;
+    color: #4F80FF;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 60px;
+}
+
+.card-details__button_buy {
+    margin-right: 28px;
+}
+
+@media (max-width: 968px) {
+    .card {
+        padding-top: 50px;
+    }
+
+    .card__wrap {
+        flex-direction: column;
+    }
+
+    .card__image {
+        order: 1;
+        margin-right: 0;
+    }
+
+    .card-details {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 698px) {
+    .card-details {
+        max-width: 400px;
+        margin-bottom: 20px;
+
+    }
+
+    .card-details__title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .card-detail__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-details__wrap-btn:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .card-details__footer {
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    .card-details__price {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .card-details__button_buy {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+.characteristics__list {
+    max-width: 920px;
+}
+
+.characteristics__item {
+    margin-bottom: 15px;
+}
+
+.characteristics__title {
+    position: relative;
+    width: 100%;
+    padding: 12px 30px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.characteristics__title:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid;
+    border-color: transparent #000 #000 transparent;
+    transform: rotate(45deg);
+    transition: border-color 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.characteristics__title.active:after {
+    border-color: #000 transparent transparent #000;
+    bottom: 5px;
+}
+
+.characteristics__description {
+    margin-top: -2px;
+    border: 1px solid;
+    border-color: transparent #000 #000 #000;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.characteristics__title:focus {
+    outline: none;
+}
+
+.characteristics__description.active {
+    height: auto;
+}
+
+.characteristics__item-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.characteristics__item-description {
+    padding: 15px 0;
+}
+
+.characteristics__item-description p {
+    margin: 0 15px;
+}
+
+.characteristics__item-description p:last-child {
+    text-align: right;
+}
+
+.characteristics__item-description:first-child {
+    padding-top: 30px;
+}
+
+.characteristics__item-description:last-child {
+    padding-bottom: 30px;
+}
+
+
+.cross-sell__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.cross-sell__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    min-height: 360px;
+    margin-bottom: 30px;
+}
+
+.cross-sell__image {
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+}
+
+.cross-sell__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.cross-sell__price {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cross-sell__button {
+    margin-top: auto;
+    text-align: center;
+    max-width: 104px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+@media (max-width: 968px) {
+    .cross-sell__list {
+        max-width: 560px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .cross-sell__item {
+        margin: 0 30px 30px;
+    }
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.open {
+    display: flex;
+}
+
+
+.modal__block {
+    position: relative;
+    max-width: 640px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.modal__subtitle {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.modal__title {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 30px;
+}
+
+.modal__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.modal__label {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.modal__label-text {
+    min-width: 105px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.modal__input {
+    flex-grow: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent transparent #000 transparent;
+}
+
+.modal__submit {
+    margin-top: 20px;
+}
+
+

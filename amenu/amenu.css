@@ -1,0 +1,45 @@
+.amenu__item {
+    word-wrap: normal;
+}
+
+
+.amenu__burger {
+    position: relative;
+}
+
+.amenu__burger-open .amenu__burger-list{
+    display: block;
+}
+
+.amenu__burger-btn {
+    display: none;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg id='Capa_1' enable-background='new 0 0 551.13 551.13' height='512' viewBox='0 0 551.13 551.13' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='path-1_20_' d='m275.565 137.783c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.892 68.891-68.892 37.995 0 68.891 30.897 68.891 68.891 0 37.995-30.896 68.892-68.891 68.892zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6)'/%3E%3Cpath id='path-1_19_' d='m275.565 344.456c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.891 68.891-68.891 37.995 0 68.891 30.897 68.891 68.891 0 37.995-30.896 68.891-68.891 68.891zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6 6)'/%3E%3Cpath id='path-1_18_' d='m275.565 551.13c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.891 68.891-68.891 37.995 0 68.891 30.897 68.891 68.891s-30.896 68.891-68.891 68.891zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6 12)'/%3E%3C/svg%3E");
+    transition: background-image 300ms;
+}
+.amenu__burger-btn.amenu__burger-btn_active {
+    display: block;
+}
+
+
+.amenu__burger-btn:hover {
+    background-image: url("data:image/svg+xml,%3Csvg id='Capa_1' enable-background='new 0 0 515.555 515.555' height='512' viewBox='0 0 515.555 515.555' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3Cpath d='m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3Cpath d='m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3C/svg%3E");
+}
+
+.amenu__burger-list {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid black;
+    list-style: none;
+    display: none;
+    padding: 30px;
+}
+
